@@ -6,11 +6,13 @@ botoes[1].onclick= aumentaTamanho;
 console.log(botoes);
 
 function diminuiTamanho(){
-tamanhoSenha = tamanhoSenha - 1;
+    if (tamanhoSenha > 1)
+tamanhoSenha = tamanhoSenha--;
 numeroSenha.textContent= tamanhoSenha
 }
 
 function aumentaTamanho(){
-tamanhoSenha = tamanhoSenha + 1;
+    if (tamanhoSenha < 20){
+tamanhoSenha = tamanhoSenha++;}
 numeroSenha.textContent = tamanhoSenha;
 }
