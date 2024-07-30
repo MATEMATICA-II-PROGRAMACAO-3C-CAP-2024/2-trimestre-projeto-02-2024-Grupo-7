@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-@media  screen and (min-width: 768px) {
-    .parametro-coluna__senha{
-        flex-direction: row;
-    }
-}
+
 :root{
     --branco: white;
     --cor-de-fundo: #00162E;
