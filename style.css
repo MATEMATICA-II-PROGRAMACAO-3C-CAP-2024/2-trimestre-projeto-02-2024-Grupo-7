@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-@media  screen and (min-width: 768px) {
-    .parametro-coluna__senha{
-        flex-direction: row;
-    }
-}
 
 :root{
     --branco: white;
@@ -80,6 +75,13 @@ body{
     width: 50%;
     margin: 0 auto;
 }
+
+@media  screen and (min-width: 768px) {
+    .parametro-coluna__senha{
+        flex-direction: row;
+    }
+}
+
 .parametro-senha__titulo{
     font-size: 24px;
 }
