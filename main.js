@@ -36,20 +36,36 @@ function geraSenha (){
 campoSenha.value = letrasMaiusculas;
 
 function diminuiTamanho(){
-    if (tamanhoSenha > 1)
-tamanhoSenha = tamanhoSenha--;
+    if (tamanhoSenha > 1){
+        //tamanhoSenha = tamanhoSenha-1;
+        tamanhoSenha--;
+}
 numeroSenha.textContent= tamanhoSenha;
-geraSenha
 }
 
 function aumentaTamanho(){
     if (tamanhoSenha < 20){
-tamanhoSenha = tamanhoSenha++;}
+//tamanhoSenha = tamanhoSenha+1;
+tamanhoSenha++}
 numeroSenha.textContent = tamanhoSenha;
-geraSenha;
 }
+
 const checkbox = document.querySelectorAll('.checkbox');
 for (i=0; i < checkbox.length;i++){
     checkbox[i].onclick = geraSenha;
 console.log(checkbox);
 }
+
+function classificaSenha(){
+    forcaSenha.classList.remove('fraca','media','forte');
+    if (tamanhoSenha > 11){
+    forcaSenha.classList.add('forte');
+    } else if (tamanhoSenha > 5 && tamanhoSenha < 12) {
+    
+    forcaSenha.classList.add('media');
+    
+    } else if (tamanhoSenha < 6){
+    
+    forcaSenha.classList.add('fraca');
+    }
+    }
