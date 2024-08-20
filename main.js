@@ -12,7 +12,7 @@ const forcaSenha= document.querySelectorAll('.forca');
 
 botoes[0].onclick= diminuiTamanho;
 botoes[1].onclick= aumentaTamanho;
-//código omitido
+
 
 function diminuiTamanho(){
     if (tamanhoSenha > 1){
@@ -55,7 +55,6 @@ function geraSenha (){
     let numeroAleatorio = Math.random()*letrasMaiusculas.length;
     numeroAleatorio = Math.floor(numeroAleatorio);
     senha = senha + letrasMaiusculas[numeroAleatorio];
-    console.log(letrasMaiusculas[numeroAleatorio]);
     }
     campoSenha.value = senha;
     classificaSenha(alfabeto.length);
